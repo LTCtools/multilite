@@ -17,9 +17,9 @@ package org.multibit.viewsystem.swing.view.dialogs;
 
 
 
-import com.google.uro.core.Transaction;
-import com.google.uro.core.Wallet.BalanceType;
-import com.google.uro.core.Wallet.SendRequest;
+import com.google.litecoin.core.Transaction;
+import com.google.litecoin.core.Wallet.BalanceType;
+import com.google.litecoin.core.Wallet.SendRequest;
 import org.multibit.controller.Controller;
 import org.multibit.controller.bitcoin.BitcoinController;
 import org.multibit.exchange.CurrencyConverter;

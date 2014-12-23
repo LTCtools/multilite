@@ -1,6 +1,6 @@
 package org.multibit.controller.bitcoin;
 
-import com.google.uro.core.*;
+import com.google.litecoin.core.*;
 import org.multibit.controller.Controller;
 import org.multibit.model.bitcoin.WalletData;
 import org.multibit.model.core.StatusEnum;

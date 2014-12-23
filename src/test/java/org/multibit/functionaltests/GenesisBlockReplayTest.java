@@ -72,7 +72,7 @@ public class GenesisBlockReplayTest extends TestCase {
             final CreateControllers.Controllers controllers = CreateControllers.createControllers(applicationDataDirectoryLocator);
 
             log.debug("Creating Bitcoin service");
-            // Create the MultiBitService that connects to the uro network.
+            // Create the MultiBitService that connects to the litecoin network.
             MultiBitService multiBitService = new MultiBitService(controllers.bitcoinController);
             controllers.bitcoinController.setMultiBitService(multiBitService);
 
@@ -139,13 +139,13 @@ public class GenesisBlockReplayTest extends TestCase {
         System.out.println("Building MultiBit runtime in : " + multiBitDirectory.getAbsolutePath());
 
         // Create an empty multibit.properties.
-        File multibitProperties = new File(multiBitDirectoryPath + File.separator + "multiuro.properties");
+        File multibitProperties = new File(multiBitDirectoryPath + File.separator + "multilite.properties");
         multibitProperties.createNewFile();
         multibitProperties.deleteOnExit();
 
         // Copy in the checkpoints stored in git - this is in source/main/resources/.
-        File multibitCheckpoints = new File(multiBitDirectoryPath + File.separator + "multiuro.checkpoints");
-        FileHandler.copyFile(new File("./src/main/resources/multiuro.checkpoints"), multibitCheckpoints);
+        File multibitCheckpoints = new File(multiBitDirectoryPath + File.separator + "multilite.checkpoints");
+        FileHandler.copyFile(new File("./src/main/resources/multilite.checkpoints"), multibitCheckpoints);
         multibitCheckpoints.deleteOnExit();
 
         return multiBitDirectory;

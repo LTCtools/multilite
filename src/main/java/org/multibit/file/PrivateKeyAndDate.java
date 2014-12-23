@@ -17,8 +17,8 @@ package org.multibit.file;
 
 import java.util.Date;
 
-import com.google.uro.core.ECKey;
-import com.google.uro.core.Utils;
+import com.google.litecoin.core.ECKey;
+import com.google.litecoin.core.Utils;
 
 /**
  * POJO containing an ECKey and Date

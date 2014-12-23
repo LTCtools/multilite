@@ -15,10 +15,10 @@
  */
 package org.multibit.viewsystem.swing.view.panels;
 
-import com.google.uro.core.Sha256Hash;
-import com.google.uro.core.Transaction;
-import com.google.uro.core.Utils;
-import com.google.uro.core.Wallet.SendRequest;
+import com.google.litecoin.core.Sha256Hash;
+import com.google.litecoin.core.Transaction;
+import com.google.litecoin.core.Utils;
+import com.google.litecoin.core.Wallet.SendRequest;
 import org.bitcoinj.wallet.Protos.Wallet.EncryptionType;
 import org.multibit.MultiBit;
 import org.multibit.controller.Controller;
@@ -43,7 +43,7 @@ import javax.swing.*;
 import java.awt.*;
 
 /**
- * The send uro confirm panel.
+ * The send litecoin confirm panel.
  */
 public class SendBitcoinConfirmPanel extends JPanel implements WalletBusyListener {
     private static final long serialVersionUID = 191435612399957705L;
@@ -116,7 +116,7 @@ public class SendBitcoinConfirmPanel extends JPanel implements WalletBusyListene
     }
 
     /**
-     * Initialise uro confirm panel.
+     * Initialise litecoin confirm panel.
      */
     public void initUI() {
         JPanel mainPanel = new JPanel();

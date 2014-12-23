@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleName</key>
-	<string>MultiUro</string>
+	<string>MultiLite</string>
 	<key>CFBundleIdentifier</key>
 	<string>org.multibit</string>
 	<key>CFBundleVersion</key>
@@ -21,13 +21,13 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleIconFile</key>
-	<string>multiuro.icns</string>
+	<string>multilite.icns</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright MultiBit developers 2013, MultiUro developers 2014</string>
+	<string>Copyright MultiBit developers 2013, MultiLite developers 2014</string>
 	<key>CFBundleGetInfoString</key>
-	<string>MultiBit, © 2013 MultiBit developers; MultiUro, © 2014 MultiUro developers</string>
+	<string>MultiBit, © 2013 MultiBit developers; MultiLite, © 2014 MultiLite developers</string>
 	<key>CFBundleDisplayName</key>
-	<string>MultiUro</string>
+	<string>MultiLite</string>
 	<key>Java</key>
 	<dict>
 		<key>WorkingDirectory</key>
@@ -37,7 +37,7 @@
 		<key>JVMVersion</key>
 		<string>1.6+</string>
 		<key>ClassPath</key>
-		<string>$JAVAROOT/multiuro-exe.jar</string>
+		<string>$JAVAROOT/multilite-exe.jar</string>
 		<key>Properties</key>
 		<dict>
 			<key>apple.laf.useScreenMenuBar</key>
@@ -50,12 +50,12 @@
 			<key>CFBundleTypeRole</key>
 			<string>Shell</string>
 			<key>CFBundleURLIconFile</key>
-			<string>multiuro.icns</string>
+			<string>multilite.icns</string>
 			<key>CFBundleURLName</key>
-			<string>org.multibit.uro.url</string>
+			<string>org.multibit.litecoin.url</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>uro</string>
+				<string>litecoin</string>
 			</array>
 		</dict>
 	</array>

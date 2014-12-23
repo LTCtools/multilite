@@ -42,7 +42,7 @@ public class ApplicationDataDirectoryLocator {
      * 
      * This is worked out as follows:
      * 
-     * 1. See if there is a multiuro.properties in MultiUro's current working
+     * 1. See if there is a multilite.properties in MultiLite's current working
      * directory If there is, use this directory as the application data
      * directory This is for backwards compatibility and for running everything
      * from a USB drive
@@ -53,17 +53,17 @@ public class ApplicationDataDirectoryLocator {
      * 
      * 2. Otherwise set the working directory as follows:
      * 
-     * PC System.getenv("APPDATA")/MultiUroInExecutableJar
+     * PC System.getenv("APPDATA")/MultiLiteInExecutableJar
      * 
-     * e.g. C:/Documents and Settings/Administrator/Application Data/MultiUroInExecutableJar
+     * e.g. C:/Documents and Settings/Administrator/Application Data/MultiLiteInExecutableJar
      * 
-     * Mac System.getProperty("user.home")/Library/Application Support/MultiUroInExecutableJar
+     * Mac System.getProperty("user.home")/Library/Application Support/MultiLiteInExecutableJar
      * 
-     * e.g. /Users/jim/Library/Application Support/MultiUroInExecutableJar
+     * e.g. /Users/jim/Library/Application Support/MultiLiteInExecutableJar
      * 
-     * Linux System.getProperty("user.home")/MultiUroInExecutableJar
+     * Linux System.getProperty("user.home")/MultiLiteInExecutableJar
      * 
-     * e.g. /Users/jim/MultiUroInExecutableJar
+     * e.g. /Users/jim/MultiLiteInExecutableJar
      */
     public String getApplicationDataDirectory() {
         if (applicationDataDirectory != null) {
@@ -78,18 +78,18 @@ public class ApplicationDataDirectoryLocator {
             String operatingSystemName = System.getProperty("os.name");
             if (operatingSystemName != null && operatingSystemName.startsWith("Windows")) {
                 // Windows os
-                applicationDataDirectory = System.getenv("APPDATA") + File.separator + "MultiUro";
+                applicationDataDirectory = System.getenv("APPDATA") + File.separator + "MultiLite";
             } else {
                 if (operatingSystemName != null && operatingSystemName.startsWith("Mac")) {
                     // Mac os
                     if ( (new File("../../../../" + FileHandler.USER_PROPERTIES_FILE_NAME)).exists()) {
                         applicationDataDirectory = new File("../../../..").getAbsolutePath();
                     } else {
-                        applicationDataDirectory = System.getProperty("user.home") + "/Library/Application Support/MultiUro";
+                        applicationDataDirectory = System.getProperty("user.home") + "/Library/Application Support/MultiLite";
                     }
                 } else {
                     // treat as Linux/ unix variant
-                    applicationDataDirectory = System.getProperty("user.home") + "/MultiUro";
+                    applicationDataDirectory = System.getProperty("user.home") + "/MultiLite";
                 }
             }
             
@@ -108,7 +108,7 @@ public class ApplicationDataDirectoryLocator {
     
     /**
      * Get the installation directory.
-     * This is the directory into which MultiUro was installed.
+     * This is the directory into which MultiLite was installed.
      * @throws IOException 
      * 
      * @TODO when running locally it is possible that the working directory directory and installation directory are different. Fix.

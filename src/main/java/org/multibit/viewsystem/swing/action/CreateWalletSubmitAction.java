@@ -49,8 +49,8 @@ import org.multibit.viewsystem.swing.view.panels.HelpContentsPanel;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.google.uro.core.ECKey;
-import com.google.uro.core.Wallet;
+import com.google.litecoin.core.ECKey;
+import com.google.litecoin.core.Wallet;
 
 /**
  * This {@link Action} creates a new wallet.

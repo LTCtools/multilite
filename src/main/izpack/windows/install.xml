@@ -16,10 +16,10 @@
       The meaning of the tags should be natural ...
   -->
   <info>
-    <appname>MultiUro</appname>
-    <appsubpath>MultiUro</appsubpath>
+    <appname>MultiLite</appname>
+    <appsubpath>MultiLite</appsubpath>
     <appversion>${project.version}</appversion>
-    <url>https://multiuro.org/</url>
+    <url>https://litecoin.org/</url>
     <uninstaller write="yes"/>
     <javaversion>1.6</javaversion>
     <run-privileged condition="izpack.windowsinstall.vista|izpack.windowsinstall.7"/>
@@ -31,7 +31,7 @@
     <variable name="DesktopShortcutCheckboxEnabled" value="true"/>
   </variables>
 
-  <!-- Register protocol handling for uro: URI -->
+  <!-- Register protocol handling for litecoin: URI -->
   <listeners>
     <listener installer="RegistryInstallerListener"
               uninstaller="RegistryUninstallerListener">
@@ -91,16 +91,16 @@
       We specify here our packs.
   -->
   <packs>
-    <pack name="MultiUro" required="yes">
-      <description>MultiUro install files.</description>
+    <pack name="MultiLite" required="yes">
+      <description>MultiLite install files.</description>
       <file src="readme.txt" targetdir="$INSTALL_PATH"/>
       <file src="configuration.md" targetdir="$INSTALL_PATH"/>
-      <file src="multiuro.ico" targetdir="$INSTALL_PATH"/>
-      <file src="multiuro.checkpoints" targetdir="$INSTALL_PATH"/>
+      <file src="multilite.ico" targetdir="$INSTALL_PATH"/>
+      <file src="multilite.checkpoints" targetdir="$INSTALL_PATH"/>
       <file src="release_notes.txt" targetdir="$INSTALL_PATH"/>
       <file src="COPYING" targetdir="$INSTALL_PATH"/>
       <file src="authors.txt" targetdir="$INSTALL_PATH"/>
-      <file src="multiuro.exe" targetdir="$INSTALL_PATH"/>
+      <file src="multilite.exe" targetdir="$INSTALL_PATH"/>
     </pack>
   </packs>
 

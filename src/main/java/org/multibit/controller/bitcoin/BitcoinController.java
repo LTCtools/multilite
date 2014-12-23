@@ -15,9 +15,9 @@
  */
 package org.multibit.controller.bitcoin;
 
-import com.google.uro.core.*;
-import com.google.uro.uri.BitcoinURI;
-import com.google.uro.uri.BitcoinURIParseException;
+import com.google.litecoin.core.*;
+import com.google.litecoin.uri.BitcoinURI;
+import com.google.litecoin.uri.BitcoinURIParseException;
 import org.multibit.controller.AbstractController;
 import org.multibit.controller.AbstractEventHandler;
 import org.multibit.controller.core.CoreController;

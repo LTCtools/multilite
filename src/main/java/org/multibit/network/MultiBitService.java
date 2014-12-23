@@ -15,14 +15,14 @@
  */
 package org.multibit.network;
 
-import com.google.uro.core.MultiBitBlockChain;
-import com.google.uro.core.*;
-import com.google.uro.core.Wallet.SendRequest;
-import com.google.uro.crypto.KeyCrypterException;
-import com.google.uro.discovery.DnsDiscovery;
-import com.google.uro.store.BlockStore;
-import com.google.uro.store.BlockStoreException;
-import com.google.uro.store.SPVBlockStore;
+import com.google.litecoin.core.MultiBitBlockChain;
+import com.google.litecoin.core.*;
+import com.google.litecoin.core.Wallet.SendRequest;
+import com.google.litecoin.crypto.KeyCrypterException;
+import com.google.litecoin.discovery.DnsDiscovery;
+import com.google.litecoin.store.BlockStore;
+import com.google.litecoin.store.BlockStoreException;
+import com.google.litecoin.store.SPVBlockStore;
 import com.google.common.util.concurrent.ListenableFuture;
 import org.bitcoinj.wallet.Protos.Wallet.EncryptionType;
 import org.multibit.ApplicationDataDirectoryLocator;
@@ -60,12 +60,12 @@ import java.util.concurrent.TimeoutException;
 
 /**
  * <p>
- * MultiBitService encapsulates the interaction with the uro netork
+ * MultiBitService encapsulates the interaction with the litecoin netork
  * including: o Peers o Block chain download o sending / receiving bitcoins
  * <p/>
  * The testnet can be slow or flaky as it's a shared resource. You can use the
  * <a href="http://sourceforge
- * .net/projects/uro/files/Bitcoin/testnet-in-a-box/">testnet in a box</a>
+ * .net/projects/litecoin/files/Bitcoin/testnet-in-a-box/">testnet in a box</a>
  * to do everything purely locally.
  * </p>
  */
@@ -74,7 +74,7 @@ public class MultiBitService {
 
   private static final Logger log = LoggerFactory.getLogger(MultiBitService.class);
 
-  public static final String MULTIBIT_PREFIX = "multiuro";
+  public static final String MULTIBIT_PREFIX = "multilite";
   public static final String TESTNET_PREFIX = "testnet";
   public static final String TESTNET3_PREFIX = "testnet3";
   public static final String SEPARATOR = "-";
@@ -565,7 +565,7 @@ public class MultiBitService {
   public Transaction sendCoins(WalletData perWalletModelData, SendRequest sendRequest,
                                CharSequence password) throws java.io.IOException, AddressFormatException, KeyCrypterException {
 
-    // Ping the peers to check the uro network connection
+    // Ping the peers to check the litecoin network connection
     List<Peer> connectedPeers = peerGroup.getConnectedPeers();
     boolean atLeastOnePingWorked = false;
     if (connectedPeers != null) {

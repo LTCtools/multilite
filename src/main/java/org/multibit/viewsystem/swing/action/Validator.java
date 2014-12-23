@@ -15,10 +15,10 @@
  */
 package org.multibit.viewsystem.swing.action;
 
-import com.google.uro.core.Address;
-import com.google.uro.core.AddressFormatException;
-import com.google.uro.core.Transaction;
-import com.google.uro.core.Wallet.BalanceType;
+import com.google.litecoin.core.Address;
+import com.google.litecoin.core.AddressFormatException;
+import com.google.litecoin.core.Transaction;
+import com.google.litecoin.core.Wallet.BalanceType;
 import org.multibit.controller.Controller;
 import org.multibit.controller.bitcoin.BitcoinController;
 import org.multibit.exchange.CurrencyConverter;

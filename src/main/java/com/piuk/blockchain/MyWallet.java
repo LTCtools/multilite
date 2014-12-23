@@ -17,10 +17,10 @@
 
 package com.piuk.blockchain;
 
-import com.google.uro.core.Base58;
-import com.google.uro.core.ECKey;
-import com.google.uro.core.NetworkParameters;
-import com.google.uro.core.Wallet;
+import com.google.litecoin.core.Base58;
+import com.google.litecoin.core.ECKey;
+import com.google.litecoin.core.NetworkParameters;
+import com.google.litecoin.core.Wallet;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.codehaus.jackson.type.TypeReference;
 import org.spongycastle.crypto.BufferedBlockCipher;

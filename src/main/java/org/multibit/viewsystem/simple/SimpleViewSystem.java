@@ -8,9 +8,9 @@ import org.multibit.model.core.StatusEnum;
 import org.multibit.viewsystem.DisplayHint;
 import org.multibit.viewsystem.ViewSystem;
 
-import com.google.uro.core.ECKey;
-import com.google.uro.core.Transaction;
-import com.google.uro.core.Wallet;
+import com.google.litecoin.core.ECKey;
+import com.google.litecoin.core.Transaction;
+import com.google.litecoin.core.Wallet;
 import org.multibit.viewsystem.View;
 
 /**

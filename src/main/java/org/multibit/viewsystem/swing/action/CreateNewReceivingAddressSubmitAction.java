@@ -15,9 +15,9 @@
  */
 package org.multibit.viewsystem.swing.action;
 
-import com.google.uro.core.ECKey;
-import com.google.uro.crypto.KeyCrypter;
-import com.google.uro.crypto.KeyCrypterException;
+import com.google.litecoin.core.ECKey;
+import com.google.litecoin.crypto.KeyCrypter;
+import com.google.litecoin.crypto.KeyCrypterException;
 import org.bitcoinj.wallet.Protos.Wallet.EncryptionType;
 import org.multibit.controller.bitcoin.BitcoinController;
 import org.multibit.file.BackupManager;

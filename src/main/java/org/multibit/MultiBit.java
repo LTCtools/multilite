@@ -15,8 +15,8 @@
  */
 package org.multibit;
 
-import com.google.uro.core.StoredBlock;
-import com.google.uro.core.Wallet;
+import com.google.litecoin.core.StoredBlock;
+import com.google.litecoin.core.Wallet;
 import org.multibit.controller.Controller;
 import org.multibit.controller.bitcoin.BitcoinController;
 import org.multibit.controller.core.CoreController;
@@ -253,7 +253,7 @@ public final class MultiBit {
             MessageManager.INSTANCE.addMessage(directoryMessage2);
 
             log.debug("Creating Bitcoin service");
-            // Create the MultiBitService that connects to the uro network.
+            // Create the MultiBitService that connects to the litecoin network.
             MultiBitService multiBitService = new MultiBitService(bitcoinController);
             bitcoinController.setMultiBitService(multiBitService);
 
@@ -706,7 +706,7 @@ public final class MultiBit {
     }
 
     public static void setRememberedRawBitcoinURI(String rememberedRawBitcoinURI) {
-        log.debug("Remembering the uro URI to process of '" + rememberedRawBitcoinURI + "'");
+        log.debug("Remembering the litecoin URI to process of '" + rememberedRawBitcoinURI + "'");
         MultiBit.rememberedRawBitcoinURI = rememberedRawBitcoinURI;
     }
 }

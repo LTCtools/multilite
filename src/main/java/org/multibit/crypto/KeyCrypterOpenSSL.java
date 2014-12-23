@@ -32,8 +32,8 @@ import org.spongycastle.crypto.modes.CBCBlockCipher;
 import org.spongycastle.crypto.paddings.PaddedBufferedBlockCipher;
 import org.spongycastle.crypto.params.ParametersWithIV;
 
-import com.google.uro.core.Utils;
-import com.google.uro.crypto.KeyCrypterException;
+import com.google.litecoin.core.Utils;
+import com.google.litecoin.crypto.KeyCrypterException;
 import com.google.common.base.Preconditions;
 
 /**

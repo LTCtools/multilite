@@ -35,9 +35,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.spongycastle.util.Arrays;
 
-import com.google.uro.core.Wallet;
-import com.google.uro.crypto.KeyCrypter;
-import com.google.uro.crypto.KeyCrypterException;
+import com.google.litecoin.core.Wallet;
+import com.google.litecoin.crypto.KeyCrypter;
+import com.google.litecoin.crypto.KeyCrypterException;
 
 
 /**

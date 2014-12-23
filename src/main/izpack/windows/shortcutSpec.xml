@@ -1,10 +1,10 @@
 <shortcuts> 
-   <programGroup defaultName="MultiUro" location="applications"/> 
-   <shortcut name="MultiUro" 
-             target="$INSTALL_PATH/multiuro.exe" 
-             description="MultiUro" 
+   <programGroup defaultName="MultiLite" location="applications"/> 
+   <shortcut name="MultiLite" 
+             target="$INSTALL_PATH/multilite.exe" 
+             description="MultiLite" 
              workingDirectory="$INSTALL_PATH"
-             iconFile="$INSTALL_PATH/multiuro.ico" 
+             iconFile="$INSTALL_PATH/multilite.ico" 
              initialState="normal" 
              programGroup="yes"
              desktop="yes" 
@@ -12,9 +12,9 @@
              startMenu="no" 
              startup="no">
     </shortcut>
-    <shortcut name="Uninstall MultiUro ${project.version}" 
+    <shortcut name="Uninstall MultiLite ${project.version}" 
              target="$INSTALL_PATH/uninstaller/uninstaller.jar" 
-             description="Uninstall MultiUro" 
+             description="Uninstall MultiLite" 
              initialState="normal" 
              programGroup="yes"
              desktop="no" 

@@ -26,7 +26,7 @@ import java.awt.event.ActionEvent;
 
 /**
  * This {@link Action} represents the action to toggle the more or less button
- * on the send/ receive uro panels.
+ * on the send/ receive litecoin panels.
  */
 public class MoreOrLessAction extends AbstractAction {
 

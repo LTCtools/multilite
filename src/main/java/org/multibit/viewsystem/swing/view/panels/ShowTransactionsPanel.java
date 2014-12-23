@@ -15,9 +15,9 @@
  */
 package org.multibit.viewsystem.swing.view.panels;
 
-import com.google.uro.core.Transaction;
-import com.google.uro.core.TransactionConfidence;
-import com.google.uro.core.TransactionConfidence.ConfidenceType;
+import com.google.litecoin.core.Transaction;
+import com.google.litecoin.core.TransactionConfidence;
+import com.google.litecoin.core.TransactionConfidence.ConfidenceType;
 import org.multibit.MultiBit;
 import org.multibit.controller.Controller;
 import org.multibit.controller.bitcoin.BitcoinController;
@@ -213,7 +213,7 @@ public class ShowTransactionsPanel extends JPanel implements Viewable, CurrencyC
         tableColumn.setPreferredWidth(250);
 
         tableColumn = table.getColumnModel().getColumn(3); // Amount (BTC).
-        int amountBTCWidth = Math.max(fontMetrics.stringWidth(controller.getLocaliser().getString("sendBitcoinPanel.amountLabel") + " (URO)"),
+        int amountBTCWidth = Math.max(fontMetrics.stringWidth(controller.getLocaliser().getString("sendBitcoinPanel.amountLabel") + " (LTC)"),
                 fontMetrics.stringWidth("00000.000000000"));
         tableColumn.setPreferredWidth(amountBTCWidth);
         tableColumn.setMinWidth(amountBTCWidth);

@@ -4,10 +4,10 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Map;
 
-import com.google.uro.core.CheckpointManager;
-import com.google.uro.core.NetworkParameters;
-import com.google.uro.core.StoredBlock;
-import com.google.uro.core.VerificationException;
+import com.google.litecoin.core.CheckpointManager;
+import com.google.litecoin.core.NetworkParameters;
+import com.google.litecoin.core.StoredBlock;
+import com.google.litecoin.core.VerificationException;
 
 public class MultiBitCheckpointManager extends CheckpointManager {
 

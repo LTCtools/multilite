@@ -2,27 +2,27 @@
 
 <shortcuts>
 
-  <programGroup defaultName="MultiUro"
+  <programGroup defaultName="MultiLite"
   location="applications"/>
 
    <shortcut
-     name="MultiUro"
+     name="MultiLite"
      programGroup="yes"
      desktop="yes"
      applications="no"
      startMenu="no"
      startup="no"
      target="/usr/bin/java"
-     commandLine="-jar $INSTALL_PATH/multiuro-exe.jar"
+     commandLine="-jar $INSTALL_PATH/multilite-exe.jar"
      initialState="normal"
-     iconFile="$INSTALL_PATH/multiuro48.png"
+     iconFile="$INSTALL_PATH/multilite48.png"
      workingDirectory="$INSTALL_PATH"
      type="Application"
      encoding="UTF-8"
-     description="MultiUro">
+     description="MultiLite">
    </shortcut>
    <shortcut
-     name="Uninstall MultiUro"
+     name="Uninstall MultiLite"
      programGroup="yes"
      desktop="yes"
      applications="no"
@@ -34,7 +34,7 @@
      workingDirectory="$INSTALL_PATH"
      type="Application"
      encoding="UTF-8"
-     description="Uninstall MultiUro">
+     description="Uninstall MultiLite">
    </shortcut>
 </shortcuts>
 

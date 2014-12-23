@@ -17,9 +17,9 @@ package org.multibit.file;
 
 
 
-import com.google.uro.core.ECKey;
-import com.google.uro.core.NetworkParameters;
-import com.google.uro.core.Wallet;
+import com.google.litecoin.core.ECKey;
+import com.google.litecoin.core.NetworkParameters;
+import com.google.litecoin.core.Wallet;
 import com.piuk.blockchain.MyWallet;
 import junit.framework.TestCase;
 import org.junit.Test;

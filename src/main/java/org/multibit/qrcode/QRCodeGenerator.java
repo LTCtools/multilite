@@ -39,10 +39,10 @@ import org.multibit.exchange.CurrencyConverter;
 import org.multibit.exchange.CurrencyConverterResult;
 import org.multibit.model.bitcoin.BitcoinModel;
 
-import com.google.uro.core.Address;
-import com.google.uro.core.AddressFormatException;
-import com.google.uro.core.Utils;
-import com.google.uro.uri.BitcoinURI;
+import com.google.litecoin.core.Address;
+import com.google.litecoin.core.AddressFormatException;
+import com.google.litecoin.core.Utils;
+import com.google.litecoin.uri.BitcoinURI;
 import com.google.zxing.WriterException;
 import com.google.zxing.qrcode.decoder.ErrorCorrectionLevel;
 import com.google.zxing.qrcode.encoder.ByteMatrix;
@@ -108,10 +108,10 @@ public class QRCodeGenerator {
             }
             this.bitcoinController.getModel().setActiveWalletPreference(BitcoinModel.SEND_PERFORM_PASTE_NOW, "false");
         } catch (IllegalArgumentException e) {
-            //log.warn("The address '" + address + "' could not be converted to a uro address. (IAE)");
+            //log.warn("The address '" + address + "' could not be converted to a litecoin address. (IAE)");
             return null;
         } catch (AddressFormatException e) {
-            //log.warn("The address '" + address + "' could not be converted to a uro address. (AFE)");
+            //log.warn("The address '" + address + "' could not be converted to a litecoin address. (AFE)");
             return null;
         }
 

@@ -40,8 +40,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.spongycastle.util.Arrays;
 
-import com.google.uro.core.MultiBitBlockChain;
-import com.google.uro.crypto.KeyCrypterException;
+import com.google.litecoin.core.MultiBitBlockChain;
+import com.google.litecoin.crypto.KeyCrypterException;
 
 /**
  * This {@link Action} exports the active wallets private keys.

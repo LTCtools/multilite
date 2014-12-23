@@ -1,30 +1,30 @@
 ### Introduction
 
-MultiUro is a Simplified Payment Verification (SPV) Uro desktop client.
+MultiLite is a Simplified Payment Verification (SPV) Litecoin desktop client.
 It is ported from the MultiBit Bitcoin client. Huge thanks to the original devs for this awesome project!
 
-MultiUro relies on the following technologies:
+MultiLite relies on the following technologies:
 
 * Maven as the build system, so the usual Maven processes apply. If you're not familiar
 with Maven then [download it first](http://maven.apache.org) and follow their installation instructions.
 * [ZXing ("Zebra Crossing")](https://code.google.com/p/zxing/) for QR codes
-* [Uroj](https://github.com/langerhans/uroj-new) for access to the Uro network
+* [Litecoinj](https://github.com/langerhans/litecoinj-new) for access to the Litecoin network
 * IzPack for creating installers for Windows, Mac, Linux
 * [Bitcoinj Enforcer Rules](https://github.com/gary-rowe/BitcoinjEnforcerRules) to prevent dependency chain attacks
 * [XChange](https://github.com/timmolter/XChange) for access to several Bitcoin exchanges
 
-#### A note on the Uroj dependency
+#### A note on the Litecoinj dependency
 
-MultiUro depends on a special fork of Uroj for its Bitcoin support. This is due to legacy wallet serialization issues
-and the MultiUro team are working towards a complete integration. To build MultiUro you will need to clone this fork from
+MultiLite depends on a special fork of Litecoinj for its Bitcoin support. This is due to legacy wallet serialization issues
+and the MultiLite team are working towards a complete integration. To build MultiLite you will need to clone this fork from
 here:
 ```
-https://code.google.com/r/esotericizm88-urocoinj-multibit
+https://code.google.com/r/esotericizm88-litecoincoinj-multibit
 ```
 
-The branch you should use for the MultiUro develop code is: `bcj-0.10.3-mb-alice`
+The branch you should use for the MultiLite develop code is: `bcj-0.10.3-mb-alice`
 
-Once cloned, you should then install the custom Uroj library using
+Once cloned, you should then install the custom Litecoinj library using
 
 ```
 mvn clean install
@@ -46,7 +46,7 @@ Once the release has been tested and is ready to go live, the final act is to up
 
 The `master` branch is then tagged with the release number. Tags are in the format `v1.2.3` to distinguish them from branch names.
 
-An announcement is made on the MultiUro website to alert everyone that a new version is available.
+An announcement is made on the MultiLite website to alert everyone that a new version is available.
 
 ### Maven build targets
 
@@ -56,7 +56,7 @@ The important targets are:
 mvn clean package
 ```
 
-which will package the MultiUro project into `multiuro-x.y.z.jar` where `x.y.z` is the current version
+which will package the MultiLite project into `multilite-x.y.z.jar` where `x.y.z` is the current version
 number. This is suitable for local development work.
 
 If you want to generate a complete set of multi-platform installers (Windows, Mac and Linux) you 
@@ -68,25 +68,25 @@ maven clean install
 
 After some processing, you will have the following artifacts in the target directory:
 
-* an executable jar = multiuro-exe.jar
-* a Mac application bundle = MultiUro.app
-* a Mac DMG file = multiuro-x.y.z.dmg
-* an installer for Windows = multiuro-x.y.z-windows.exe
-* an installer for Linux = multiuro-x.y.z-linux.jar
+* an executable jar = multilite-exe.jar
+* a Mac application bundle = MultiLite.app
+* a Mac DMG file = multilite-x.y.z.dmg
+* an installer for Windows = multilite-x.y.z-windows.exe
+* an installer for Linux = multilite-x.y.z-linux.jar
 
-To run MultiUro from these artifacts you can follow the instructions [provided on the main MultiUro
-website](https://multiuro.org/help.html)
+To run MultiLite from these artifacts you can follow the instructions [provided on the main MultiLite
+website](https://litecoin.org/help.html)
 
-### MultiUro contains cut down JREs so is a large clone
+### MultiLite contains cut down JREs so is a large clone
 
-The MultiUro installers contain cut down JREs so the project clone is quite large.
+The MultiLite installers contain cut down JREs so the project clone is quite large.
 (100 to 200 MB).
 
 ### Custom configuration
 
-MultiUro is quite flexible and has several features only accessible to power users through the configuration file. This
+MultiLite is quite flexible and has several features only accessible to power users through the configuration file. This
 is discussed in more detail in [configuration.md](configuration.md)
 
 ### Contributing
 
-If you want to contribute, please contact me at: [info@multiuro.org](mailto:info@multiuro.org).
+If you want to contribute, please contact me at: [info@litecoin.org](mailto:info@litecoin.org).

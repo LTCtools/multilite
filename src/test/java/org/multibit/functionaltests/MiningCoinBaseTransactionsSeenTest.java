@@ -16,11 +16,11 @@
 package org.multibit.functionaltests;
 
 
-import com.google.uro.core.DumpedPrivateKey;
-import com.google.uro.core.NetworkParameters;
-import com.google.uro.core.Transaction;
-import com.google.uro.core.Wallet;
-import com.google.uro.core.Wallet.BalanceType;
+import com.google.litecoin.core.DumpedPrivateKey;
+import com.google.litecoin.core.NetworkParameters;
+import com.google.litecoin.core.Transaction;
+import com.google.litecoin.core.Wallet;
+import com.google.litecoin.core.Wallet.BalanceType;
 import junit.framework.TestCase;
 import org.junit.Test;
 import org.multibit.ApplicationDataDirectoryLocator;
@@ -85,7 +85,7 @@ public class MiningCoinBaseTransactionsSeenTest extends TestCase {
             final CreateControllers.Controllers controllers = CreateControllers.createControllers(applicationDataDirectoryLocator);
 
             log.debug("Creating Bitcoin service");
-            // Create the MultiBitService that connects to the uro network.
+            // Create the MultiBitService that connects to the litecoin network.
             MultiBitService multiBitService = new MultiBitService(controllers.bitcoinController);
             log.debug("multiBitService = " + multiBitService);
 
@@ -205,13 +205,13 @@ public class MiningCoinBaseTransactionsSeenTest extends TestCase {
         System.out.println("Building MultiBit runtime in : " + multiBitDirectory.getAbsolutePath());
 
         // Create an empty multibit.properties.
-        File multibitProperties = new File(multiBitDirectoryPath + File.separator + "multiuro.properties");
+        File multibitProperties = new File(multiBitDirectoryPath + File.separator + "multilite.properties");
         multibitProperties.createNewFile();
         multibitProperties.deleteOnExit();
 
         // Copy in the checkpoints stored in git - this is in source/main/resources/.
-        File multibitCheckpoints = new File(multiBitDirectoryPath + File.separator + "multiuro.checkpoints");
-        FileHandler.copyFile(new File("./src/main/resources/multiuro.checkpoints"), multibitCheckpoints);
+        File multibitCheckpoints = new File(multiBitDirectoryPath + File.separator + "multilite.checkpoints");
+        FileHandler.copyFile(new File("./src/main/resources/multilite.checkpoints"), multibitCheckpoints);
         multibitCheckpoints.deleteOnExit();
 
         return multiBitDirectory;

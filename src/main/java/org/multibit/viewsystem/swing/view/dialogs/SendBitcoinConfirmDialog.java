@@ -30,10 +30,10 @@ import org.multibit.viewsystem.swing.MultiBitFrame;
 import org.multibit.viewsystem.swing.view.components.FontSizer;
 import org.multibit.viewsystem.swing.view.components.MultiBitDialog;
 
-import com.google.uro.core.Wallet.SendRequest;
+import com.google.litecoin.core.Wallet.SendRequest;
 
 /**
- * The send uro confirm dialog.
+ * The send litecoin confirm dialog.
  */
 public class SendBitcoinConfirmDialog extends MultiBitDialog {
 
@@ -72,7 +72,7 @@ public class SendBitcoinConfirmDialog extends MultiBitDialog {
     }
 
     /**
-     * Initialise uro confirm dialog.
+     * Initialise litecoin confirm dialog.
      */
     public void initUI() {
         FontMetrics fontMetrics = getFontMetrics(FontSizer.INSTANCE.getAdjustedDefaultFont());

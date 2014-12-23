@@ -15,9 +15,9 @@
  */
 package org.multibit.viewsystem.swing.view.panels;
 
-import com.google.uro.core.Address;
-import com.google.uro.uri.BitcoinURI;
-import com.google.uro.uri.BitcoinURIParseException;
+import com.google.litecoin.core.Address;
+import com.google.litecoin.uri.BitcoinURI;
+import com.google.litecoin.uri.BitcoinURIParseException;
 import org.joda.money.Money;
 import org.multibit.controller.Controller;
 import org.multibit.controller.bitcoin.BitcoinController;
@@ -213,7 +213,7 @@ public abstract class AbstractTradePanel extends JPanel implements Viewable, Cop
     }
 
     /**
-     * is it the receive uro panel (return true) or the send uro panel
+     * is it the receive litecoin panel (return true) or the send litecoin panel
      * (return false)
      */
     protected abstract boolean isReceiveBitcoin();

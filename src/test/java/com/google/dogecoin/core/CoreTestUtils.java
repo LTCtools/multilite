@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.google.uro.core;
+package com.google.litecoin.core;
 
 import java.math.BigInteger;
 
-import com.google.uro.store.BlockStore;
-import com.google.uro.store.BlockStoreException;
+import com.google.litecoin.store.BlockStore;
+import com.google.litecoin.store.BlockStoreException;
 
 /**
  * This is the bitcoinj TestUtils but renamed as jenkins was complaining there are no tests in it

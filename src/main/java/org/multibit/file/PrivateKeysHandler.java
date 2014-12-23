@@ -35,8 +35,8 @@ import java.util.Scanner;
 import java.util.Set;
 import java.util.TimeZone;
 
-import com.google.uro.crypto.KeyCrypter;
-import com.google.uro.crypto.KeyCrypterException;
+import com.google.litecoin.crypto.KeyCrypter;
+import com.google.litecoin.crypto.KeyCrypterException;
 
 import org.multibit.crypto.KeyCrypterOpenSSL;
 import org.multibit.utils.DateUtils;
@@ -44,19 +44,19 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.spongycastle.crypto.params.KeyParameter;
 
-import com.google.uro.core.AddressFormatException;
-import com.google.uro.core.Block;
-import com.google.uro.core.BlockChain;
-import com.google.uro.core.DumpedPrivateKey;
-import com.google.uro.core.ECKey;
-import com.google.uro.core.NetworkParameters;
-import com.google.uro.core.ScriptException;
-import com.google.uro.core.StoredBlock;
-import com.google.uro.core.Transaction;
-import com.google.uro.core.TransactionInput;
-import com.google.uro.core.TransactionOutput;
-import com.google.uro.core.Utils;
-import com.google.uro.core.Wallet;
+import com.google.litecoin.core.AddressFormatException;
+import com.google.litecoin.core.Block;
+import com.google.litecoin.core.BlockChain;
+import com.google.litecoin.core.DumpedPrivateKey;
+import com.google.litecoin.core.ECKey;
+import com.google.litecoin.core.NetworkParameters;
+import com.google.litecoin.core.ScriptException;
+import com.google.litecoin.core.StoredBlock;
+import com.google.litecoin.core.Transaction;
+import com.google.litecoin.core.TransactionInput;
+import com.google.litecoin.core.TransactionOutput;
+import com.google.litecoin.core.Utils;
+import com.google.litecoin.core.Wallet;
 
 import org.bitcoinj.wallet.Protos.Wallet.EncryptionType;
 
@@ -248,7 +248,7 @@ public class PrivateKeysHandler {
 
     private void outputHeaderComment(StringBuffer out) {
         out.append("# KEEP YOUR PRIVATE KEYS SAFE !").append("\n");
-        out.append("# Anyone who can read this file can spend your uro.").append("\n");
+        out.append("# Anyone who can read this file can spend your litecoin.").append("\n");
         out.append("#").append("\n");
         out.append("# Format:").append("\n");
         out.append("#   <Base58 encoded private key>[<whitespace>[<key createdAt>]]").append("\n");

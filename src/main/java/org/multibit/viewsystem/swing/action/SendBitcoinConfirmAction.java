@@ -15,12 +15,12 @@
  */
 package org.multibit.viewsystem.swing.action;
 
-import com.google.uro.core.Address;
-import com.google.uro.core.AddressFormatException;
-import com.google.uro.core.Utils;
-import com.google.uro.core.Wallet.SendRequest;
-import com.google.uro.core.WrongNetworkException;
-import com.google.uro.crypto.KeyCrypterException;
+import com.google.litecoin.core.Address;
+import com.google.litecoin.core.AddressFormatException;
+import com.google.litecoin.core.Utils;
+import com.google.litecoin.core.Wallet.SendRequest;
+import com.google.litecoin.core.WrongNetworkException;
+import com.google.litecoin.crypto.KeyCrypterException;
 import org.multibit.controller.bitcoin.BitcoinController;
 import org.multibit.message.Message;
 import org.multibit.message.MessageManager;
@@ -38,7 +38,7 @@ import java.awt.event.ActionEvent;
 import java.math.BigInteger;
 
 /**
- * This {@link Action} shows the send uro confirm dialog or validation dialog on an attempted spend.
+ * This {@link Action} shows the send litecoin confirm dialog or validation dialog on an attempted spend.
  */
 public class SendBitcoinConfirmAction extends MultiBitSubmitAction {
 
@@ -61,7 +61,7 @@ public class SendBitcoinConfirmAction extends MultiBitSubmitAction {
     }
 
     /**
-     * Complete the transaction to work out the fee) and then show the send uro confirm dialog.
+     * Complete the transaction to work out the fee) and then show the send litecoin confirm dialog.
      */
     @Override
     public void actionPerformed(ActionEvent e) {

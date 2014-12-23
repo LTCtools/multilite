@@ -15,9 +15,9 @@
  */
 package org.multibit.model.bitcoin;
 
-import com.google.uro.core.Address;
-import com.google.uro.core.ECKey;
-import com.google.uro.core.Wallet;
+import com.google.litecoin.core.Address;
+import com.google.litecoin.core.ECKey;
+import com.google.litecoin.core.Wallet;
 import org.multibit.MultiBit;
 import org.multibit.file.WalletLoadException;
 import org.multibit.file.WalletSaveException;

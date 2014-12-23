@@ -2,7 +2,7 @@ package org.multibit.viewsystem.dataproviders;
 
 
 /**
- * DataProvider for send uro and send uro confirm action
+ * DataProvider for send litecoin and send litecoin confirm action
  * @author jim
  *
  */

@@ -15,8 +15,8 @@
  */
 package org.multibit.crypto;
 
-import com.google.uro.core.Utils;
-import com.google.uro.crypto.KeyCrypterException;
+import com.google.litecoin.core.Utils;
+import com.google.litecoin.crypto.KeyCrypterException;
 import junit.framework.TestCase;
 import org.junit.Test;
 import org.slf4j.Logger;

@@ -15,10 +15,10 @@
  */
 package org.multibit.viewsystem.swing.action;
 
-import com.google.uro.core.AddressFormatException;
-import com.google.uro.core.Transaction;
-import com.google.uro.core.Wallet.SendRequest;
-import com.google.uro.crypto.KeyCrypterException;
+import com.google.litecoin.core.AddressFormatException;
+import com.google.litecoin.core.Transaction;
+import com.google.litecoin.core.Wallet.SendRequest;
+import com.google.litecoin.crypto.KeyCrypterException;
 import org.bitcoinj.wallet.Protos.Wallet.EncryptionType;
 import org.multibit.controller.Controller;
 import org.multibit.controller.bitcoin.BitcoinController;
@@ -37,7 +37,7 @@ import java.io.IOException;
 import java.nio.CharBuffer;
 
 /**
- * This {@link Action} actually spends uro.
+ * This {@link Action} actually spends litecoin.
  */
 public class SendBitcoinNowAction extends AbstractAction implements WalletBusyListener {
 
@@ -93,7 +93,7 @@ public class SendBitcoinNowAction extends AbstractAction implements WalletBusyLi
   }
 
   /**
-   * Actually send the uro.
+   * Actually send the litecoin.
    */
   @Override
   public void actionPerformed(ActionEvent event) {
@@ -214,7 +214,7 @@ public class SendBitcoinNowAction extends AbstractAction implements WalletBusyLi
       log.error(e.getMessage(), e);
       message = controller.getLocaliser().getString("sendBitcoinNowAction.pingFailure");
     } catch (Exception e) {
-      // Really trying to catch anything that goes wrong with the send uro.
+      // Really trying to catch anything that goes wrong with the send litecoin.
       log.error(e.getMessage(), e);
       message = e.getMessage();
     } finally {

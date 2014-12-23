@@ -15,8 +15,8 @@
  */
 package org.multibit.viewsystem.swing.action;
 
-import com.google.uro.core.*;
-import com.google.uro.crypto.KeyCrypterException;
+import com.google.litecoin.core.*;
+import com.google.litecoin.crypto.KeyCrypterException;
 import org.multibit.controller.bitcoin.BitcoinController;
 import org.multibit.model.bitcoin.WalletBusyListener;
 import org.multibit.utils.WhitespaceTrimmer;

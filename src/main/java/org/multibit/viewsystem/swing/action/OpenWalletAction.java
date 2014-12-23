@@ -15,11 +15,11 @@
  */
 package org.multibit.viewsystem.swing.action;
 
-import com.google.uro.core.StoredBlock;
-import com.google.uro.core.Transaction;
-import com.google.uro.core.TransactionConfidence;
-import com.google.uro.core.Wallet;
-import com.google.uro.crypto.KeyCrypterException;
+import com.google.litecoin.core.StoredBlock;
+import com.google.litecoin.core.Transaction;
+import com.google.litecoin.core.TransactionConfidence;
+import com.google.litecoin.core.Wallet;
+import com.google.litecoin.crypto.KeyCrypterException;
 import org.multibit.controller.Controller;
 import org.multibit.controller.bitcoin.BitcoinController;
 import org.multibit.file.BackupManager;

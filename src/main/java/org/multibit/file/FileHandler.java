@@ -15,10 +15,10 @@
  */
 package org.multibit.file;
 
-import com.google.uro.core.BlockChain;
-import com.google.uro.core.ECKey;
-import com.google.uro.core.Wallet;
-import com.google.uro.crypto.KeyCrypterException;
+import com.google.litecoin.core.BlockChain;
+import com.google.litecoin.core.ECKey;
+import com.google.litecoin.core.Wallet;
+import com.google.litecoin.crypto.KeyCrypterException;
 import org.multibit.ApplicationDataDirectoryLocator;
 import org.multibit.controller.Controller;
 import org.multibit.controller.bitcoin.BitcoinController;
@@ -50,8 +50,8 @@ import java.util.*;
 public class FileHandler {
     private static Logger log = LoggerFactory.getLogger(FileHandler.class);
 
-    public static final String USER_PROPERTIES_FILE_NAME = "multiuro.properties";
-    public static final String USER_PROPERTIES_HEADER_TEXT = "multiuro";
+    public static final String USER_PROPERTIES_FILE_NAME = "multilite.properties";
+    public static final String USER_PROPERTIES_HEADER_TEXT = "multilite";
 
     private final Controller controller;
     private final BitcoinController bitcoinController;

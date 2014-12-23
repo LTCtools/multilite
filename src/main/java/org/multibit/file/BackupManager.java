@@ -28,12 +28,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.spongycastle.util.Arrays;
 
-import com.google.uro.core.Utils;
-import com.google.uro.core.Wallet;
-import com.google.uro.crypto.EncryptedPrivateKey;
-import com.google.uro.crypto.KeyCrypter;
-import com.google.uro.crypto.KeyCrypterException;
-import com.google.uro.crypto.KeyCrypterScrypt;
+import com.google.litecoin.core.Utils;
+import com.google.litecoin.core.Wallet;
+import com.google.litecoin.crypto.EncryptedPrivateKey;
+import com.google.litecoin.crypto.KeyCrypter;
+import com.google.litecoin.crypto.KeyCrypterException;
+import com.google.litecoin.crypto.KeyCrypterScrypt;
 import com.google.protobuf.ByteString;
 
 

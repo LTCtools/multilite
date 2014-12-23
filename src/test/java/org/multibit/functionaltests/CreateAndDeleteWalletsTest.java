@@ -66,7 +66,7 @@ public class CreateAndDeleteWalletsTest extends TestCase {
             controller = controllers.bitcoinController;
 
             log.debug("Creating Bitcoin service");
-            // create the MultiBitService that connects to the uro network
+            // create the MultiBitService that connects to the litecoin network
             MultiBitService multiBitService = new MultiBitService(controller);
             controller.setMultiBitService(multiBitService);
 
@@ -120,16 +120,16 @@ public class CreateAndDeleteWalletsTest extends TestCase {
         File multiBitDirectory = FileHandler.createTempDirectory("CreateAndDeleteWalletsTest");
         String multiBitDirectoryPath = multiBitDirectory.getAbsolutePath();
 
-        System.out.println("Building MultiUro runtime in : " + multiBitDirectory.getAbsolutePath());
+        System.out.println("Building MultiLite runtime in : " + multiBitDirectory.getAbsolutePath());
 
         // Create an empty multibit.properties.
-        File multibitProperties = new File(multiBitDirectoryPath + File.separator + "multiuro.properties");
+        File multibitProperties = new File(multiBitDirectoryPath + File.separator + "multilite.properties");
         multibitProperties.createNewFile();
         multibitProperties.deleteOnExit();
 
         // Copy in the checkpoints stored in git - this is in source/main/resources/.
-        File multibitCheckpoints = new File(multiBitDirectoryPath + File.separator + "multiuro.checkpoints");
-        FileHandler.copyFile(new File("./src/main/resources/multiuro.checkpoints"), multibitCheckpoints);
+        File multibitCheckpoints = new File(multiBitDirectoryPath + File.separator + "multilite.checkpoints");
+        FileHandler.copyFile(new File("./src/main/resources/multilite.checkpoints"), multibitCheckpoints);
         multibitCheckpoints.deleteOnExit();
 
         return multiBitDirectory;

@@ -30,7 +30,7 @@ import java.io.PrintStream;
 public final class MultiBitInExecutableJar {
 
     public static final String OUTPUT_DIRECTORY = "log";
-    public static final String CONSOLE_OUTPUT_FILENAME = "multiuro.log";
+    public static final String CONSOLE_OUTPUT_FILENAME = "multilite.log";
 
     private static Logger log = LoggerFactory.getLogger(MultiBitInExecutableJar.class);
 

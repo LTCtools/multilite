@@ -24,8 +24,8 @@ import org.junit.Before;
 import org.junit.Test;
 import org.multibit.Localiser;
 import org.multibit.controller.bitcoin.BitcoinController;
-import com.google.uro.core.ECKey;
-import com.google.uro.core.Utils;
+import com.google.litecoin.core.ECKey;
+import com.google.litecoin.core.Utils;
 import org.multibit.CreateControllers;
 
 public class AlertManagerTest extends TestCase {

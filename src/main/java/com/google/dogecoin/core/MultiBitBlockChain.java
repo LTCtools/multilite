@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.google.uro.core;
+package com.google.litecoin.core;
 
 import java.io.File;
 import java.util.List;
 
-import com.google.uro.store.BlockStore;
-import com.google.uro.store.BlockStoreException;
-import com.google.uro.store.SPVBlockStore;
+import com.google.litecoin.store.BlockStore;
+import com.google.litecoin.store.BlockStoreException;
+import com.google.litecoin.store.SPVBlockStore;
 
 /**
  * Extension of bitcoinj BlockChain for use with block chain replay.

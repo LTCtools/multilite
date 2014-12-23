@@ -12,11 +12,11 @@ import org.multibit.model.bitcoin.WalletData;
 import org.multibit.model.bitcoin.WalletInfoData;
 import org.multibit.store.MultiBitWalletVersion;
 
-import com.google.uro.core.ECKey;
-import com.google.uro.core.NetworkParameters;
-import com.google.uro.core.Wallet;
-import com.google.uro.crypto.KeyCrypter;
-import com.google.uro.crypto.KeyCrypterScrypt;
+import com.google.litecoin.core.ECKey;
+import com.google.litecoin.core.NetworkParameters;
+import com.google.litecoin.core.Wallet;
+import com.google.litecoin.crypto.KeyCrypter;
+import com.google.litecoin.crypto.KeyCrypterScrypt;
 import com.google.protobuf.ByteString;
 
 /**

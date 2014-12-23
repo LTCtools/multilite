@@ -33,10 +33,10 @@ import org.multibit.message.MessageManager;
 import org.multibit.viewsystem.swing.view.components.FontSizer;
 import org.multibit.viewsystem.swing.view.panels.ExportPrivateKeysPanel;
 
-import com.google.uro.core.Utils;
-import com.google.uro.crypto.EncryptedPrivateKey;
-import com.google.uro.crypto.KeyCrypter;
-import com.google.uro.crypto.KeyCrypterException;
+import com.google.litecoin.core.Utils;
+import com.google.litecoin.crypto.EncryptedPrivateKey;
+import com.google.litecoin.crypto.KeyCrypter;
+import com.google.litecoin.crypto.KeyCrypterException;
 import org.multibit.CreateControllers;
 
 
@@ -317,6 +317,6 @@ public class ExportPrivateKeysSubmitActionTest extends TestCase {
         exportPrivateKeysSubmitAction.actionPerformed(null);
         Object[] messages = MessageManager.INSTANCE.getMessages().toArray();
         assertTrue("There were no messages but there should have been", messages != null && messages.length > 0);
-        assertEquals("Wrong message after receive uro confirm with no active wallet", ResetTransactionsSubmitActionTest.EXPECTED_NO_WALLET_IS_SELECTED, ((Message)messages[messages.length - 1]).getText());
+        assertEquals("Wrong message after receive litecoin confirm with no active wallet", ResetTransactionsSubmitActionTest.EXPECTED_NO_WALLET_IS_SELECTED, ((Message)messages[messages.length - 1]).getText());
     }
 }

@@ -39,8 +39,8 @@ import org.multibit.viewsystem.swing.view.components.MultiBitLabel;
 public class HelpAboutPanel extends JPanel implements Viewable {
     private static final long serialVersionUID = 191352212345057705L;
 
-	private static final String SPLASH_ICON_FILE = "/images/multiuro512.jpg";
-    private static final String MULTIBIT_URL = "https://multiuro.org";
+	private static final String SPLASH_ICON_FILE = "/images/multilite512.jpg";
+    private static final String MULTIBIT_URL = "https://litecoin.org";
     
     private Controller controller;
 

@@ -36,8 +36,8 @@ import org.multibit.viewsystem.swing.view.panels.RemovePasswordPanel;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.google.uro.core.Wallet;
-import com.google.uro.crypto.KeyCrypterException;
+import com.google.litecoin.core.Wallet;
+import com.google.litecoin.crypto.KeyCrypterException;
 
 /**
  * This {@link Action} action removes the encryption of private keys in a wallet.

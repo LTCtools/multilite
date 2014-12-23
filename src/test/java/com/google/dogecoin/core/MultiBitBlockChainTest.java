@@ -14,19 +14,19 @@
  * limitations under the License.
  */
 
-package com.google.uro.core;
+package com.google.litecoin.core;
 
-import com.google.uro.core.Wallet.BalanceType;
-import com.google.uro.store.BlockStore;
-import com.google.uro.store.MemoryBlockStore;
-import com.google.uro.utils.BriefLogFormatter;
+import com.google.litecoin.core.Wallet.BalanceType;
+import com.google.litecoin.store.BlockStore;
+import com.google.litecoin.store.MemoryBlockStore;
+import com.google.litecoin.utils.BriefLogFormatter;
 import org.junit.Before;
 import org.junit.Test;
 
 import java.math.BigInteger;
 
-import static com.google.uro.core.CoreTestUtils.createFakeBlock;
-import static com.google.uro.core.CoreTestUtils.createFakeTx;
+import static com.google.litecoin.core.CoreTestUtils.createFakeBlock;
+import static com.google.litecoin.core.CoreTestUtils.createFakeTx;
 import static org.junit.Assert.*;
 
 // Handling of chain splits/reorgs are in ChainSplitTests.

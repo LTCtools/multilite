@@ -15,10 +15,10 @@
  */
 package org.multibit.viewsystem.swing.action;
 
-import com.google.uro.core.Address;
-import com.google.uro.core.AddressFormatException;
-import com.google.uro.core.ECKey;
-import com.google.uro.core.WrongNetworkException;
+import com.google.litecoin.core.Address;
+import com.google.litecoin.core.AddressFormatException;
+import com.google.litecoin.core.ECKey;
+import com.google.litecoin.core.WrongNetworkException;
 import org.multibit.controller.bitcoin.BitcoinController;
 import org.multibit.model.bitcoin.WalletBusyListener;
 import org.multibit.utils.WhitespaceTrimmer;

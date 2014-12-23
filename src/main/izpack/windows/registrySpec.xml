@@ -2,41 +2,41 @@
 Require the following structure on Windows
 see http://msdn.microsoft.com/en-us/library/aa767914(v=vs.85).aspx
 
-uro.reg:
+litecoin.reg:
 Windows Registry Editor Version 5.00
 
-[HKEY_CLASSES_ROOT\uro]
-@="URL:Uro Protocol"
+[HKEY_CLASSES_ROOT\litecoin]
+@="URL:Litecoin Protocol"
 "URL Protocol"=""
 
-[HKEY_CLASSES_ROOT\uro\DefaultIcon]
-@="multiuro.exe,1"
+[HKEY_CLASSES_ROOT\litecoin\DefaultIcon]
+@="multilite.exe,1"
 
-[HKEY_CLASSES_ROOT\uro\shell]
+[HKEY_CLASSES_ROOT\litecoin\shell]
 
-[HKEY_CLASSES_ROOT\uro\shell\open]
+[HKEY_CLASSES_ROOT\litecoin\shell\open]
 
-[HKEY_CLASSES_ROOT\uro\shell\open\command]
-@="\"C:\\Program Files\\MultiUro-0.2.0beta4\\multiuro.exe\" \"%1\""
+[HKEY_CLASSES_ROOT\litecoin\shell\open\command]
+@="\"C:\\Program Files\\MultiLite-0.2.0beta4\\multilite.exe\" \"%1\""
 
 
 -->
 <registry>
-  <pack name="MultiUro">
-    <key root="HKCR" keypath="uro" />
-    <value root="HKCR" name="" keypath="uro" string="URL:Uro Protocol"/>
-    <value root="HKCR" name="URL Protocol" keypath="uro" string=""/>
-    <value root="HKCR" name="UseOriginalUrlEncoding" keypath="uro" dword="1"/>
+  <pack name="MultiLite">
+    <key root="HKCR" keypath="litecoin" />
+    <value root="HKCR" name="" keypath="litecoin" string="URL:Litecoin Protocol"/>
+    <value root="HKCR" name="URL Protocol" keypath="litecoin" string=""/>
+    <value root="HKCR" name="UseOriginalUrlEncoding" keypath="litecoin" dword="1"/>
 
-    <key root="HKCR" keypath="uro\DefaultIcon" />
-    <value root="HKCR" name="" keypath="uro\DefaultIcon" string="multiuro.exe,1"/>
+    <key root="HKCR" keypath="litecoin\DefaultIcon" />
+    <value root="HKCR" name="" keypath="litecoin\DefaultIcon" string="multilite.exe,1"/>
 
-    <key root="HKCR" keypath="uro\shell" />
+    <key root="HKCR" keypath="litecoin\shell" />
 
-    <key root="HKCR" keypath="uro\shell\open" />
+    <key root="HKCR" keypath="litecoin\shell\open" />
 
-    <key root="HKCR" keypath="uro\shell\open\command" />
-    <value root="HKCR" keypath="uro\shell\open\command" name="" string="&quot;$INSTALL_PATH\multiuro.exe&quot; &quot;%1&quot;" />
+    <key root="HKCR" keypath="litecoin\shell\open\command" />
+    <value root="HKCR" keypath="litecoin\shell\open\command" name="" string="&quot;$INSTALL_PATH\multilite.exe&quot; &quot;%1&quot;" />
 
   </pack>
 </registry>

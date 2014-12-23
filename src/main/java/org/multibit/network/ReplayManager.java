@@ -16,10 +16,10 @@
 
 package org.multibit.network;
 
-import com.google.uro.core.CheckpointManager;
-import com.google.uro.core.PeerGroup;
-import com.google.uro.core.StoredBlock;
-import com.google.uro.store.BlockStoreException;
+import com.google.litecoin.core.CheckpointManager;
+import com.google.litecoin.core.PeerGroup;
+import com.google.litecoin.core.StoredBlock;
+import com.google.litecoin.store.BlockStoreException;
 import org.multibit.controller.bitcoin.BitcoinController;
 import org.multibit.message.Message;
 import org.multibit.message.MessageManager;

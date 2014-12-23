@@ -15,9 +15,9 @@
  */
 package org.multibit.model.bitcoin;
 
-import com.google.uro.core.*;
-import com.google.uro.core.Wallet.BalanceType;
-import com.google.uro.store.BlockStoreException;
+import com.google.litecoin.core.*;
+import com.google.litecoin.core.Wallet.BalanceType;
+import com.google.litecoin.store.BlockStoreException;
 import org.multibit.controller.Controller;
 import org.multibit.controller.bitcoin.BitcoinController;
 import org.multibit.model.AbstractModel;
@@ -66,7 +66,7 @@ public class BitcoinModel extends AbstractModel<CoreModel> {
     public static final String WALLET_ORDER_TOTAL = "walletOrderTotal";
     public static final String WALLET_ORDER_PREFIX = "walletOrder.";
 
-    // Send uro and send uro confirm.
+    // Send litecoin and send litecoin confirm.
     public static final String SEND_ADDRESS = "sendAddress";
     public static final String SEND_LABEL = "sendLabel";
     public static final String SEND_AMOUNT = "sendAmount";
@@ -78,7 +78,7 @@ public class BitcoinModel extends AbstractModel<CoreModel> {
     
     public static final int MINIMUM_NUMBER_OF_CONNECTED_PEERS_BEFORE_SEND_IS_ENABLED = 2;
 
-    // Open uro URI.
+    // Open litecoin URI.
     public static final String OPEN_URI_SHOW_DIALOG = "openUriShowDialog";
     public static final String OPEN_URI_USE_URI = "openUriUseUri";
     public static final String OPEN_URI_ADDRESS = "openUriAddress";
@@ -94,9 +94,9 @@ public class BitcoinModel extends AbstractModel<CoreModel> {
     public static final BigInteger SEND_MINIMUM_FEE = new BigInteger("10000");
 
     // Maximum fee.
-    public static final BigInteger SEND_MAXIMUM_FEE = new BigInteger("100000000"); // 1 URO.
+    public static final BigInteger SEND_MAXIMUM_FEE = new BigInteger("100000000"); // 1 LTC.
 
-    // Receive uro.
+    // Receive litecoin.
     public static final String IS_RECEIVE_BITCOIN = "isReceiveBitcoin";
     public static final String RECEIVE_ADDRESS = "receiveAddress";
     public static final String RECEIVE_LABEL = "receiveLabel";
